@@ -84,7 +84,8 @@
 
     addEventHandlers(this);
 
-    this.lineHeight = this.editors.left.ace.renderer.lineHeight; // assumption: both editors have same line heights
+    // if the editors start out with display:none this breaks without the OR condition and some line height pre-set
+    this.lineHeight = this.editors.left.ace.renderer.lineHeight || 16; // assumption: both editors have same line heights
 
     // set up the editors
     this.editors.left.ace.getSession().setMode(getMode(this, C.EDITOR_LEFT));
