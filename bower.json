@@ -1,9 +1,10 @@
 {
   "name": "ace-diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/benkeen/ace-diff",
   "authors": [
-    "Ben Keen <ben.keen@gmail.com>"
+    "Ben Keen <ben.keen@gmail.com>",
+    "Pierre Guilbert <guilbep@gmail.com",
   ],
   "description": "A diff/merging wrapper for Ace Editor built on google-diff-match-patch",
   "main": "dist/ace-diff.min.js",
