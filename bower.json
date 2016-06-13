@@ -1,6 +1,6 @@
 {
   "name": "ace-diff",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/benkeen/ace-diff",
   "authors": [
     "Ben Keen <ben.keen@gmail.com>",
@@ -28,5 +28,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "google-diff-match-patch-js": "^1.0.0"
+  }
 }
