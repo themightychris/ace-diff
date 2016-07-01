@@ -82,6 +82,9 @@
       editorHeight: null
     };
 
+    this.editors.left.ace.$blockScrolling = Infinity;
+    this.editors.right.ace.$blockScrolling = Infinity;
+
     addEventHandlers(this);
 
     // if the editors start out with display:none this breaks without the OR condition and some line height pre-set
