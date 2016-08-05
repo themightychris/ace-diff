@@ -66,7 +66,7 @@ all code and DOM elements are available.
 var differ = new AceDiff({
   mode: "ace/mode/javascript",
   left: {
-    id: "left-editor",
+    id: "left-editor", //Instead of id, you can also pass the document element itself
     content: "your first file content here"
   },
   right: {
