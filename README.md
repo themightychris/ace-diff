@@ -176,6 +176,7 @@ appear.
 #### Classes
 
 - `gutterID`: the ID of the gutter element
+- `gutterEl`: instead of `gutterID`, the document element itself can be passed
 - `diff`: the class for a diff line on either editor
 - `connector`: the SVG connector
 - `newCodeConnectorLink`: the class for the copy-to-right links
