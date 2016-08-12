@@ -9,10 +9,13 @@ library (*buuuurn*). That lib handles the hard part: the computation of the docu
 just visualizes that information as line-diffs in the editors.
 
 
-### Dependencies
+### NPM Dependencies
 
-- Ace Editor 1.1.8 or later (probably works on older versions, but I haven't confirmed)
-- google-diff-match-patch (20121119 or later)
+This branch declares all its dependencies as NPM dependencies or peer-dependencies so that
+ you should just be able to install the main module in your NPM project.
+ 
+- brace 0.8.0 or later (Ace Editor 1.2.3)
+- diff-match-patch
 
 
 ### Demos
@@ -20,6 +23,8 @@ just visualizes that information as line-diffs in the editors.
 Take a look at the `gh-pages` branch of this repo for some [demos](http://benkeen.github.io/ace-diff/). The demos
 illustrate a few different configurations and styles. Hopefully they'll give you a rough sense of what it does and 
 how it works.
+
+Fork: Demos 1 seems to work, 3 has wrong colors etc.
 
 
 ### Features
