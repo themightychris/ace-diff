@@ -1,7 +1,7 @@
 'use strict';
 
 var brace = require("brace");
-var assign = require("object-assign");
+var extend = require("extend");
 var diff_match_patch = require("diff_match_patch").diff_match_patch;
 
 var Range = brace.acequire('ace/range').Range;
@@ -24,7 +24,7 @@ function AceDiff(options)
 {
     this.options = {};
 
-    assign(this.options, {
+    extend(true, this.options, {
         mode: null,
         theme: null,
         diffGranularity: C.DIFF_GRANULARITY_BROAD,
@@ -115,12 +115,12 @@ function AceDiff(options)
 }
 
 // our public API
-assign(AceDiff.prototype, {
+extend(AceDiff.prototype, {
 
     // allows on-the-fly changes to the AceDiff instance settings
     setOptions: function (options)
     {
-        assign(this.options, options);
+        extend(true, this.options, options);
         this.diff();
     },
 

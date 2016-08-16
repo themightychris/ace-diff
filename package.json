@@ -1,15 +1,15 @@
 {
   "name": "brace-diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "date": "12. August 2016",
   "description": "A diff/merging wrapper for 'brace' Editor built on google-diff-match-patch.",
   "main": "src/brace-diff.js",
   "scripts": {
-      "dist": "webpack -p",
-      "build": "webpack -d",
-      "watch": "webpack -d -w",
-      "mocha-test": "mocha --compilers js:babel-register --recursive -R spec src/test/js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "webpack -p",
+    "build": "webpack -d",
+    "watch": "webpack -d -w",
+    "mocha-test": "mocha --compilers js:babel-register --recursive -R spec src/test/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -36,10 +36,9 @@
   },
   "dependencies": {
     "diff_match_patch": "^0.1.1",
-    "object-assign": "^4.1.0"
+    "extend": "^3.0.0"
   },
   "peerDependencies": {
     "brace": "^0.8.0"
   }
-
 }
