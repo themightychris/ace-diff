@@ -1,6 +1,6 @@
 {
   "name": "brace-diff",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "date": "12. August 2016",
   "description": "A diff/merging wrapper for 'brace' Editor built on google-diff-match-patch.",
   "main": "src/brace-diff.js",
