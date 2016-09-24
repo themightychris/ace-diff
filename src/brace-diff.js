@@ -353,7 +353,7 @@ function copy(acediff, e, dir)
 
     // keep track of the scroll height
     var h = targetEditor.ace.getSession().getScrollTop();
-    targetEditor.ace.getSession().setValue(startContent + contentToInsert + endContent);
+    targetEditor.ace.getSession().doc.setValue(startContent + contentToInsert + endContent);
     targetEditor.ace.getSession().setScrollTop(parseInt(h));
 
     acediff.diff();
