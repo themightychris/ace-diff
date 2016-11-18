@@ -216,6 +216,8 @@ extend(AceDiff.prototype, {
         oldDiv.parentNode.replaceChild(newDiv, oldDiv);
 
         this.options.gutterEl.innerHTML = '';
+
+        window.removeEventListener('resize', this.windowListener);
     }
 });
 
@@ -299,6 +301,8 @@ function addEventHandlers(acediff)
     }, 250);
 
     window.addEventListener('resize', onResize);
+
+    acediff.windowListener = onResize;
 }
 
 function copy(acediff, e, dir)
