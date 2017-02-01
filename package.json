@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/fforw/brace-diff",
   "devDependencies": {
-    "brace": "^0.8.0",
+    "brace": "^0.9.1",
     "webpack": "^1.13.1"
   },
   "dependencies": {
