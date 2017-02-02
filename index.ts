@@ -1,1 +1,3 @@
-export * from './src/brace-diff'
+import * as AceDiff from './src/brace-diff'
+
+export = AceDiff
