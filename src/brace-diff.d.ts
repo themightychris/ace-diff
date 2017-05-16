@@ -84,6 +84,10 @@ declare module AceDiff {
          * Options for configuring miscellaneous CSS classes used.
          */
         classes?: AceDiffClassOptions
+        /**
+         * Instead of gutterID, the document element itself can be passed.
+         */
+        gutterEl?: HTMLElement
     }
 
     interface AceDiffEditorOptions {
@@ -119,10 +123,6 @@ declare module AceDiff {
          * The ID of the gutter element.
          */
         gutterID?: string
-        /**
-         * Instead of gutterID, the document element itself can be passed.
-         */
-        gutterEl?: HTMLElement
         /**
          * The class for a diff line on either editor.
          */
