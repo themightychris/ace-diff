@@ -63,6 +63,14 @@ function AceDiff(options)
         connectorYOffset: 0
     }, options);
 
+    if(this.options.left.id && typeof this.options.left.id === "object") {
+        this.options.left.element = this.options.left.id;
+    }
+
+    if(this.options.right.id && typeof this.options.right.id === "object") {
+        this.options.right.element = this.options.right.id;
+    }
+
     // instantiate the editors in an internal data structure that will store a little info about the diffs and
     // editor content
     this.editors = {
@@ -771,7 +779,6 @@ function createCopyContainers(acediff)
     acediff.copyRightContainer.setAttribute('class', acediff.options.classes.copyRightContainer);
     acediff.copyLeftContainer = document.createElement('div');
     acediff.copyLeftContainer.setAttribute('class', acediff.options.classes.copyLeftContainer);
-
     acediff.options.gutterEl.appendChild(acediff.copyRightContainer);
     acediff.options.gutterEl.appendChild(acediff.copyLeftContainer);
 }
@@ -880,6 +887,7 @@ function getScrollingInfo(acediff, dir)
 
 function getEditorHeight(acediff)
 {
+    console.log(acediff.options);
     return acediff.options.left.element.offsetHeight;
 }
 
