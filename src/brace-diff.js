@@ -137,6 +137,10 @@ extend(AceDiff.prototype, {
         return this.diffs.length;
     },
 
+    getDiffs: function() {
+        return this.diffs;
+    },
+
     // exposes the Ace editors in case the dev needs it
     getEditors: function ()
     {
