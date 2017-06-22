@@ -95,13 +95,14 @@ function AceDiff(options)
     // if the editors start out with display:none this breaks without the OR condition and some line height pre-set
     this.lineHeight = this.editors.left.ace.renderer.lineHeight || 16; // assumption: both editors have same line heights
 
+    /*
     // set up the editors
     this.editors.left.ace.getSession().setMode(getMode(this, C.EDITOR_LEFT));
     this.editors.right.ace.getSession().setMode(getMode(this, C.EDITOR_RIGHT));
     this.editors.left.ace.setReadOnly(!this.options.left.editable);
     this.editors.right.ace.setReadOnly(!this.options.right.editable);
     this.editors.left.ace.setTheme(getTheme(this, C.EDITOR_LEFT));
-    this.editors.right.ace.setTheme(getTheme(this, C.EDITOR_RIGHT));
+    this.editors.right.ace.setTheme(getTheme(this, C.EDITOR_RIGHT));*/
 
     createCopyContainers(this);
     createGutter(this);
